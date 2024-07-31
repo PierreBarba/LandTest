@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE CONTROL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timesheet-tab">
+        <h1>Hoja de control</h1>
+        <form>
+            <div>
+                <button type="button" id="add-time">Agregar tiempo</button>
+            </div>
+            <div>
+                <button type="button" id="action">Acción</button>
+            </div>
+            <div>
+                <label for="calendar">Calendario:</label>
+                <input type="date" id="calendar" name="calendar">
+            </div>
+            <div>
+                <label for="search">Buscar miembro del equipo:</label>
+                <input type="search" id="search" name="search" placeholder="Buscar miembro del equipo">
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tiempo de entrada y tiempo de salida</th>
+                    <th>Duración</th>
+                    <th>Costumer</th>
+                    <th>Locación</th>
+                    <th>Actividad</th>
+                    <th>Notas</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>08:00 - 17:00</td>
+                    <td>9 horas</td>
+                    <td>Cliente A</td>
+                    <td>Oficina Interna</td>
+                    <td>Desarrollo</td>
+                    <td>Ninguna</td>
+                    <td>
+                        <button class="icon-btn edit-btn">✏️</button>
+                        <button class="icon-btn note-btn">📝</button>
+                        <button class="icon-btn delete-btn">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Martha Rodriguez</td>
+                    <td>09:00 - 18:00</td>
+                    <td>9 horas</td>
+                    <td>Cliente B</td>
+                    <td>Oficina</td>
+                    <td>Compras</td>
+                    <td>Ninguna</td>
+                    <td>
+                        <button class="icon-btn edit-btn">✏️</button>
+                        <button class="icon-btn note-btn">📝</button>
+                        <button class="icon-btn delete-btn">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fatima Luna</td>
+                    <td>08:00 - 17:05</td>
+                    <td>9:05 horas</td>
+                    <td>Cliente C</td>
+                    <td>Oficina</td>
+                    <td>Ventas</td>
+                    <td>Ninguna</td>
+                    <td>
+                        <button class="icon-btn edit-btn">✏️</button>
+                        <button class="icon-btn note-btn">📝</button>
+                        <button class="icon-btn delete-btn">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Miguel Sandoval</td>
+                    <td>08:00 - 17:55</td>
+                    <td>9:55 horas</td>
+                    <td>Cliente D</td>
+                    <td>Oficina</td>
+                    <td>Finanzas</td>
+                    <td>Ninguna</td>
+                    <td>
+                        <button class="icon-btn edit-btn">✏️</button>
+                        <button class="icon-btn note-btn">📝</button>
+                        <button class="icon-btn delete-btn">🗑️</button>
+                    </td>
+                </tr>
+                <td class="tdDay" colspan="8" class="highlight">
+                    Lunes 1 Julio
+                    <span class="arrow-up">&#9650;</span>
+                </td>
+                <tr>
+                    <td>German Enciso</td>
+                    <td>08:00 - 17:30</td>
+                    <td>9:30 horas</td>
+                    <td>Cliente H</td>
+                    <td>Campo</td>
+                    <td>Tecnico</td>
+                    <td>Ninguna</td>
+                    <td>
+                        <button class="icon-btn edit-btn">✏️</button>
+                        <button class="icon-btn note-btn">📝</button>
+                        <button class="icon-btn delete-btn">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mariana Paredes</td>
+                    <td>08:00 - 14:00</td>
+                    <td>6 horas</td>
+                    <td>Cliente A</td>
+                    <td>Oficina Interna</td>
+                    <td>Desarrollo</td>
+                    <td>Ninguna</td>
+                    <td>
+                        <button class="icon-btn edit-btn">✏️</button>
+                        <button class="icon-btn note-btn">📝</button>
+                        <button class="icon-btn delete-btn">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Christian Mena</td>
+                    <td>08:00 - 13:00</td>
+                    <td>5 horas</td>
+                    <td>Cliente B</td>
+                    <td>Oficina</td>
+                    <td>Compras</td>
+                    <td>Ninguna</td>
+                    <td>
+                        <button class="icon-btn edit-btn">✏️</button>
+                        <button class="icon-btn note-btn">📝</button>
+                        <button class="icon-btn delete-btn">🗑️</button>
+                    </td>
+                </tr>
+                <td colspan="8" class="tdDay">
+                    Martes 2 Julio
+                    <span class="arrow-up">&#9650;</span>
+                </td>
+                </tr>
+                <!-- Más filas pueden ser añadidas aquí -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
